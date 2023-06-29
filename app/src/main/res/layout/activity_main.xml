@@ -28,7 +28,7 @@
 
         <TextView
             android:id="@+id/height"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Height"
@@ -40,6 +40,7 @@
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:layout_toStarof="@+id/m"
+            android:gravity="center"
             android:text="365"
             android:inputType="numberDecimal"
             android:textSize="16dp"
@@ -132,7 +133,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
             android:gravity="center"
-            android:text="kg"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="16sp">
         </TextView>
@@ -144,8 +145,10 @@
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        
-        ></Button>
+        android:text="Calculate"
+        >
+
+    </Button>
 
 </LinearLayout>
 

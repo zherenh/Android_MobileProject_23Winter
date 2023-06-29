@@ -8,7 +8,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     EditText height_edit, eight_edit;
-    TextView result_text;
+    TextView result_text, comment;
     Button calculate;
 
 
