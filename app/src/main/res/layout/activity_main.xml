@@ -1,18 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="BMI"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Height"
+            android:textColor="@color/black"
+            android:textSize="16sp">
+        </TextView>
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_toStarof="@+id/m"
+            android:text="365"
+            android:inputType="numberDecimal"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+                >
+        </EditText>
+
+        <TextView
+            android:id="@+id/m"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="m"
+            android:textColor="@color/black"
+            android:textSize="16sp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Weight"
+            android:textColor="@color/black"
+            android:textSize="16sp">
+        </TextView>
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_toStarof="@+id/kg"
+            android:text="365"
+            android:inputType="numberDecimal"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            >
+        </EditText>
+
+        <TextView
+            android:id="@+id/kg"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="kg"
+            android:textColor="@color/black"
+            android:textSize="16sp">
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Result"
+            android:textColor="@color/black"
+            android:textSize="16sp">
+        </TextView>
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_toStarof="@+id/re"
+            android:text="365"
+            android:inputType="numberDecimal"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            >
+        </EditText>
+
+        <TextView
+            android:id="@+id/re"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="kg"
+            android:textColor="@color/black"
+            android:textSize="16sp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        
+        ></Button>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
